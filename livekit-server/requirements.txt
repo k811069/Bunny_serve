@@ -1,0 +1,43 @@
+livekit-plugins-groq
+livekit-plugins-elevenlabs
+livekit-plugins-deepgram
+livekit-plugins-inworld
+python-dotenv
+pydub
+aiohttp
+google-api-python-client>=2.100.0
+
+# Media API server dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# # Local AI Models (for offline operation)
+# faster-whisper  # Local STT using Whisper
+# TTS  # Coqui TTS for local text-to-speech
+
+# Optional dependencies for enhanced semantic search
+qdrant-client
+sentence-transformers
+
+# EdgeTTS support (uses Microsoft servers but can work offline)
+edge-tts==7.0.2
+
+# Room management and JWT for API calls
+livekit-api
+PyJWT
+
+# Memory provider (optional - comment out if using local memory)
+mem0ai==1.0.0
+
+jinja2
+gtts
+pyttsx3
+
+silero-vad==6.2.0
+
+# Datadog monitoring and logging
+datadog-api-client
+ddtrace
+
+# Grafana Loki logging
+python-logging-loki>=0.3.1
